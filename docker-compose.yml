@@ -1,0 +1,28 @@
+services:
+  api: 
+    container_name: fastapi-backend
+    image: fastapi-backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:80
+    networks: 
+      - net_bridge
+
+  app:
+    container_name: angular-frontend
+    image: angular-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 4200:80
+    depends_on: 
+      - api
+    networks: 
+      - net_bridge
+
+networks:
+  net_bridge:
+    driver: bridge
