@@ -4,7 +4,16 @@
 | --- | --- | --- | 
 | [![FastAPI](https://img.shields.io/badge/FastAPI-009485.svg?logo=fastapi&logoColor=white)](#) | [![Angular](https://img.shields.io/badge/Angular-%23DD0031.svg?logo=angular&logoColor=white)](#) | [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#) |
 
-# To Do:
+# 🚀 Quickstart
+
+```bash
+> git clone https://github.com/svetlanamancic/FastAPI-Angular_CRUD
+> cd FastAPI-Angular_CRUD
+
+> docker compose up --build -d
+```
+
+### To Do:
 
 - [ ] Tests
 - [ ] Workflow
