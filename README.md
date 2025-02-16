@@ -15,6 +15,8 @@
 
 ### To Do:
 
+- [ ] Database migration
+- [ ] Actual DB model
 - [ ] Tests
 - [ ] Workflow
 - [ ] Push to DockerHub
