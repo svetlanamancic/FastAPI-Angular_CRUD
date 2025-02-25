@@ -16,23 +16,23 @@ export class UserService {
   }
 
   getUser() {
-    return this.http.get(this.baseUrl+'/user/'+'Svetlana');
+    return this.http.get(this.baseUrl+'/user/'+'Username');
   }
 
   addUser() {
     const headers = new HttpHeaders().set('Content-Type','application/json; charset=utf-8');
  
-    return this.http.post(this.baseUrl+'/user/add',{ name: "Svetlana", age: 28 }, {headers: headers})
+    return this.http.post(this.baseUrl+'/user/add',{ name: "Username", age: 25 }, {headers: headers})
   }
 
   updateUser() {
     const headers = new HttpHeaders().set('Content-Type','application/json; charset=utf-8');
  
-    return this.http.put(this.baseUrl+'/user/update',{ name: "Svetlana", age: 29 }, {headers: headers})
+    return this.http.put(this.baseUrl+'/user/update',{ name: "Username", age: 26 }, {headers: headers})
   }
 
   deleteUser() {
  
-    return this.http.delete(this.baseUrl+'/user/delete/' + 'Svetlana')
+    return this.http.delete(this.baseUrl+'/user/delete/' + 'Username')
   }
 }
